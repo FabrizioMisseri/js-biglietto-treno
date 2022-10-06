@@ -10,7 +10,12 @@
 
 //FASE DI INPUT DATI 
 //utente input km da percorrere
+const km = parseInt(prompt("inserisci kilometri da percorrere"));
+console.log(km, typeof(km));
 //utente input età
+const eta = parseInt(prompt("inserisci la tua età"));
+console.log(eta, typeof(eta));
+
 
 
 //FASE ELABORAZIONE DATI
