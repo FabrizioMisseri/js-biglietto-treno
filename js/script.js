@@ -20,29 +20,32 @@ console.log("la tua età ", eta, typeof(eta));
 
 //FASE ELABORAZIONE DATI
 //init var prezzo base = 0.21*km
-let prz_base = km * 0.21
+let prz_base = km * 0.21;
 console.log("prezzo base è ", prz_base, typeof(prz_base));
 //init var prezzo totale = vuoto
-let prz_tot = 0
+let prz_tot = 0;
 console.log("prezzo totale è ", prz_tot, typeof(prz_tot));
 //if età < 18 then: prz_tot = prz_base * 0.8
 if (eta < 18) {
-    prz_tot = prz_base * 0.8
+    prz_tot = prz_base * 0.8;
     console.log("prezzo totale è ", prz_tot, typeof(prz_tot));
 }
     //else-if età > 65 then: prz_tot = prz_base * 0.6
 else if (eta > 65) {
-    prz_tot = prz_base * 0.6
+    prz_tot = prz_base * 0.6;
     console.log("prezzo totale è ", prz_tot, typeof(prz_tot));
 }
         // else: prz_tot = prz_base
-if (18 <= eta <= 65) {
-    prz_tot = prz_base
+if (18 <= eta && eta <= 65) {
+    prz_tot = prz_base;
     console.log("prezzo totale è ", prz_tot, typeof(prz_tot));
 }
+//troncare decimali non richiesti
+prz_tot = prz_tot.toFixed(2);
+
 
 
 //FASE DI OUTPUT
 //stampa a schermo (alert) prz_tot
-
+alert(`${"il prezzo totale del tuo biglietto è di "}${prz_tot}${" euro"}`);
 
