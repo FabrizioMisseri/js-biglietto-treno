@@ -12,13 +12,13 @@
 //utente input km da percorrere
 let km = parseInt(prompt("inserisci kilometri da percorrere"));
 while (km % 1 != 0) {
-    alert("non hai inserito un numero, scimmia ...");
+    alert("scimmia non hai inserito un numero");
     km = parseInt(prompt("dai riprova puoi farcela... metti un numero non è difficile..."))
 }
 //utente input età
 let eta = parseInt(prompt("inserisci la tua età"));
 while (eta % 1 != 0) {
-    alert("non hai inserito un numero, scimmia ...");
+    alert("scimmia non hai inserito un numero");
     eta = parseInt(prompt("dai riprova puoi farcela... metti un numero non è difficile..."))
 }
 
