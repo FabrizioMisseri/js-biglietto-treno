@@ -10,11 +10,17 @@
 
 //FASE DI INPUT DATI 
 //utente input km da percorrere
-const km = parseInt(prompt("inserisci kilometri da percorrere"));
-console.log("km da percorrere ", km, typeof(km));
+let km = parseInt(prompt("inserisci kilometri da percorrere"));
+while (km % 1 != 0) {
+    alert("non hai inserito un numero idiota");
+    km = parseInt(prompt("dai riprova puoi farcela... metti un numero non è difficile..."))
+}
 //utente input età
-const eta = parseInt(prompt("inserisci la tua età"));
-console.log("la tua età ", eta, typeof(eta));
+let eta = parseInt(prompt("inserisci la tua età"));
+while (eta % 1 != 0) {
+    alert("non hai inserito un numero idiota");
+    eta = parseInt(prompt("dai riprova puoi farcela... metti un numero non è difficile..."))
+}
 
 
 
